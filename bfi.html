@@ -1,0 +1,159 @@
+<!doctype html>
+<!-- BMI -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>proj1 - Space Science Website Template</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+	<script src="js/mobile.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id="page">
+		<div id="header">
+			<div>
+				
+				<ul id="navigation">
+					<li class="selected">
+						<a href="index.html">Strona główna</a>
+					</li>
+					<li>
+						<a href="about.html">Wykonawcy</a>
+					</li>
+					
+					
+
+					<li>
+						<a href="przemiany.html">Przemiany</a>
+					</li>
+					<li>
+						<a href="atlas.html">Atlas</a>
+					</li>
+					<li class="menu">
+						<a href="bmi.html">Kalkulator</a>
+						<ul class="primary">
+							<li>
+								<a href="bmi.html">Max rep</a> 
+							</li>
+							<li>
+								<a href="bfi.html">BMI</a>
+							</li>
+						</ul>
+					</li>
+					<li class="menu">
+						<a href="blog.html">Etapy</a>
+						<ul class="secondary">
+							<li>
+								<a href="masa.html">Masa</a>
+							</li>
+							<li>
+								<a href="redukcja.html">Redukcja</a>
+							</li>
+							<li>
+								<a href="dieta.html">Dieta</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+
+		<div id="body">
+			<div class="header">
+				<div>
+					<h1>Kalkulator BMI</h1>
+					<img src="images/bfi.jpg" alt="" height="400x" width="500px">
+					<h2>Kalkulator</h2>
+
+					<div class="bfi">
+						
+<script language="JavaScript">
+<!--
+function calculateBmi() {
+var weight = document.bmiForm.weight.value
+var height = document.bmiForm.height.value
+if(weight > 0 && height > 0){	
+var finalBmi = weight/(height/100*height/100)
+document.bmiForm.bmi.value = finalBmi
+if(finalBmi < 18.5){
+document.bmiForm.meaning.value = "niedowaga"
+}
+if(finalBmi > 18.5 && finalBmi < 25){
+document.bmiForm.meaning.value = "bmi prawidłowe"
+}
+if(finalBmi > 25){
+document.bmiForm.meaning.value = "nadwaga"
+}
+}
+else{
+alert("Please Fill in everything correctly")
+}
+}
+//-->
+</script>
+  
+<form name="bmiForm">
+Waga(kg): <input type="text" name="weight" size="10"><br />
+Wzrost(cm): <input type="text" name="height" size="10"><br />
+<input type="button" value="Oblicz" onClick="calculateBmi()"><br />
+Twoje BMI: <input type="text" name="bmi" size="10"><br />
+to znaczy: <input type="text" name="meaning" size="25"><br />
+<input type="reset" value="Reset" />
+</form>
+
+
+
+
+
+
+
+        
+					</div>
+
+
+					<div class="info">
+
+						<img src="images/bmi.jpg" alt="" height="400x" width="500px">
+					
+                <a>mniej niż 16 - wygłodzenie</a> </br>
+                <a>16 - 16.99 - wychudzenie</a></br>
+                <a>17 - 18.49 - niedowaga</a></br>
+                <a>18.5 - 24.99 - wartość prawidłowa</a></br>
+                <a>25 - 29.99 - nadwaga</a></br>
+                <a>30 - 34.99 - I stopień otyłości</a></br>
+                <a>35 - 39.99 - II stopień otyłości</a></br>
+                <a>powyżej 40 - otyłość skrajna</a></br>
+              
+
+           
+          </div>
+				</div>
+					
+				</div>
+			</div>
+		</div>
+
+
+		<div id="footer">
+			<div class="connect">
+				<div>
+					<h1>ODWIEDŹ NASZE SPOŁECZNOŚCI</h1>
+					<div>
+						<a href="index.html" class="facebook">facebook</a>
+						<a href="index.html" class="twitter">twitter</a>
+						<a href="index.html" class="googleplus">googleplus</a>
+						<a href="index.html" class="pinterest">pinterest</a>
+					</div>
+				</div>
+			</div>
+			<div class="footnote">
+				<div>
+					<p>© 2021 KALINOWSKI & GOŁĄB & GREALAK</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

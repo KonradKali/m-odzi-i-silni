@@ -1,0 +1,252 @@
+<!doctype html>
+<!-- ONE REP MAX -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Oblicz swoj max</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+	<script src="js/mobile.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id="page">
+		<div id="header">
+			<div>
+				
+				<ul id="navigation">
+					<li class="selected">
+						<a href="index.html">Strona główna</a>
+					</li>
+					<li>
+						<a href="about.html">Wykonawcy</a>
+					</li>
+					
+					
+
+					<li>
+						<a href="przemiany.html">Przemiany</a>
+					</li>
+					<li>
+						<a href="atlas.html">Atlas</a>
+					</li>
+					<li class="menu">
+					<a href="bmi.html">Kalkulator</a>
+						<ul class="primary">
+							<li>
+								<a href="bmi.html">Max rep</a> 
+							</li>
+							<li>
+								<a href="bfi.html">BMI</a>
+							</li>
+						</ul>
+					</li>
+					<li class="menu">
+						<a href="blog.html">Etapy</a>
+						<ul class="secondary">
+							<li>
+                <a href="masa.html">Masa</a>
+              </li>
+              <li>
+                <a href="redukcja.html">Redukcja</a>
+              </li>
+              <li>
+                <a href="dieta.html">Dieta</a>
+              </li>
+						</ul>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+
+		<div id="body">
+			<div class="header">
+				<div>
+					<h1>Oblicz swój max</h1>
+					<img src="images/max.jpg" alt="" height="400x" width="500px">
+					<h2>Kalkulator</h2>
+
+					<div class="bfi">
+	
+
+
+
+
+  
+
+
+  <h1>One Rep Max</h1>
+       <label>Weight lifted</label>
+          <input class="textboxw" type ="number"
+                 id = "inWeightLifted"
+                 value = "0" onchange="oneRepMax()"
+                 /> kg &emsp;
+     <label>Repetions</label>
+          <input class="textboxr" type ="number"
+                 id = "inReps"
+                 value = "0" onchange="oneRepMax()"/> reps <br><br>
+
+     <label>Weight 100%</label>
+          <input class="textboxw" type ="number"
+                 id = "Weight100"
+                 value = "0"/> kg &emsp;
+     <label>Repetions</label>
+          <input class="textboxr" type ="number"
+                 id = "inReps100"
+                 value = "0"/> reps <br>
+       <label>Weight 95%</label>
+          <input class="textboxw" type ="number"
+                 id = "Weight95"
+                 value = "0"/> kg &emsp;
+     <label>Repetions</label>
+          <input class="textboxr" type ="number"
+                 id = "inReps95"
+                 value = "0"/> reps <br>
+         <label>Weight 90%</label>
+          <input class="textboxw" type ="number"
+                 id = "Weight90"
+                 value = "0"/> kg &emsp;
+     <label>Repetions</label>
+          <input class="textboxr" type ="number"
+                 id = "inReps90"
+                 value = "0"/> reps <br>
+         <label>Weight 85%</label>
+          <input class="textboxw" type ="number"
+                 id = "Weight85"
+                 value = "0"/> kg &emsp;
+     <label>Repetions</label>
+          <input class="textboxr" type ="number"
+                 id = "inReps85"
+                 value = "0"/> reps <br>
+         <label>Weight 80%</label>
+          <input class="textboxw" type ="number"
+                 id = "Weight80"
+                 value = "0"/> kg &emsp;
+     <label>Repetions</label>
+          <input class="textboxr" type ="number"
+                 id = "inReps80"
+                 value = "0"/> reps <br>
+         <label>Weight 75%</label>
+          <input class="textboxw" type ="number"
+                 id = "Weight75"
+                 value = "0"/> kg &emsp;
+     <label>Repetions</label>
+          <input class="textboxr" type ="number"
+                 id = "inReps75"
+                 value = "0"/> reps <br>
+         <label>Weight 70%</label>
+          <input class="textboxw" type ="number"
+                 id = "Weight70"
+                 value = "0"/> kg &emsp;
+     <label>Repetions</label>
+          <input class="textboxr" type ="number"
+                 id = "inReps70"
+                 value = "0"/> reps <br>
+         <label>Weight 65%</label>
+          <input class="textboxw" type ="number"
+                 id = "Weight65"
+                 value = "0"/> kg &emsp;
+     <label>Repetions</label>
+          <input class="textboxr" type ="number"
+                 id = "inReps65"
+                 value = "0"/> reps <br>
+         <label>Weight 60%</label>
+          <input class="textboxw" type ="number"
+                 id = "Weight60"
+                 value = "0"/> kg &emsp;
+     <label>Repetions</label>
+          <input class="textboxr" type ="number"
+                 id = "inReps60"
+                 value = "0"/> reps <br>
+           <label>Weight 55%</label>
+          <input class="textboxw" type ="number"
+                 id = "Weight55"
+                 value = "0"/> kg &emsp;
+     <label>Repetions</label>
+          <input class="textboxr" type ="number"
+                 id = "inReps55"
+                 value = "0"/> reps <br>
+           <label>Weight 50%</label>
+          <input class="textboxw" type ="number"
+                 id = "Weight50"
+                 value = "0"/> kg &emsp;
+     <label>Repetions</label>
+          <input class="textboxr" type ="number"
+                 id = "inReps50"
+                 value = "0"/> reps <br>
+  
+  <br>
+  
+<script type="text/javascript">
+	
+
+
+function round25(x)
+{
+    return (x % 2.5) >= 1.25 ? parseInt(x / 2.5) * 2.5 + 2.5 : parseInt(x / 2.5) * 2.5;
+}
+function oneRepMax() {
+  var inReps= document.getElementById("inReps");
+  var inWeightLifted= document.getElementById("inWeightLifted");
+  var j;
+  var onerm;
+for (j = 1; j < 25; j++) { 
+   if (inReps.value==j) {
+     onerm=(inWeightLifted.value/(1-(0.025*j)));
+   }
+}
+  var weightLiftedArray = ["Weight100","Weight95","Weight90","Weight85","Weight80","Weight75","Weight70","Weight65","Weight60","Weight55","Weight50"];
+  var repsArray =["inReps100","inReps95","inReps90","inReps85","inReps80","inReps75","inReps70","inReps65","inReps60","inReps55","inReps50"];
+  
+var i;
+for (i = 0; i < weightLiftedArray.length; i++) { 
+    var wl = document.getElementById(weightLiftedArray[i]);
+    var rp = document.getElementById(repsArray[i]);
+  if (i==0) {
+    wl.value= onerm*(1-(0.05*i));
+    rp.value= 1;
+  }
+  else {
+  wl.value= onerm*(1-(0.05*i));
+  rp.value= i*2;
+  }
+  wl.value= round25(wl.value);
+}
+}
+</script>
+
+
+
+
+
+           
+          </div>
+				</div>
+					
+				</div>
+			</div>
+		</div>
+
+
+		<div id="footer">
+      <div class="connect">
+        <div>
+          <h1>ODWIEDŹ NASZE SPOŁECZNOŚCI</h1>
+          <div>
+            <a href="index.html" class="facebook">facebook</a>
+            <a href="index.html" class="twitter">twitter</a>
+            <a href="index.html" class="googleplus">googleplus</a>
+            <a href="index.html" class="pinterest">pinterest</a>
+          </div>
+        </div>
+      </div>
+      <div class="footnote">
+        <div>
+          <p>© 2021 KALINOWSKI & GOŁĄB & GREALAK</p>
+        </div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
